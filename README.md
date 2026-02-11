@@ -83,3 +83,41 @@ Do not refer to the Product Requirement Document. The implementation plan needs 
 ```
 
 The output of this step is [IMPLEMENTATION_PLAN.md](application/ralph/IMPLEMENTATION_PLAN.md).
+
+
+## Step 4 - Ralph Loop
+
+Init Bob:
+
+```
+git clone https://github.com/nheidloff/ralph-wiggum-fun-app.git
+cd ralph-wiggum-fun-app
+
+export BOBSHELL_API_KEY="xxx"
+export GIT_USER_EMAIL="xxx"
+export GIT_USER_NAME="xxx"
+sh init-bob.sh
+```
+
+Start Container: 
+
+```
+sh start-container-bob.sh
+```
+
+Ensure that Bob can be started:
+
+```
+bob --auth-method api-key
+bob --auth-method api-key -p "Hi"
+```
+
+Run Bob:
+
+```
+sh ../ralph/iteration.sh
+# or
+sh ../ralph/loop.sh
+```
+
+The output are the new files in the [application](application) folder.

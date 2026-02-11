@@ -6,6 +6,7 @@ PROMPT_FILE="$APPLICATION_DIR/../ralph/PROMPT.md"
 git config --global user.email "$GIT_USER_EMAIL"
 git config --global user.name "$GIT_USER_NAME"
 git config --global --add safe.directory /workspace/application
+git config --global --add safe.directory /workspace
 
 # 1. DETERMINE ITERATION NUMBER
 if [ -z "$ITERATION" ]; then
@@ -47,5 +48,9 @@ else
 fi
 
 # 4. COMMIT
+git config --global user.email "$GIT_USER_EMAIL"
+git config --global user.name "$GIT_USER_NAME"
+git config --global --add safe.directory /workspace/application
+git config --global --add safe.directory /workspace
 git add .
 git commit -m "Ralph Wiggum Iteration $ITERATION" --allow-empty
