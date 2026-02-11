@@ -1,0 +1,17 @@
+# Start with Python 3.12
+FROM python:3.12-slim
+
+# Install Node.js 20, git, and procps (which provides pgrep)
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    procps \
+    && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Bob CLI
+RUN curl -s https://s3.us-south.cloud-object-storage.appdomain.cloud/bobshell/install-bobshell.sh | bash
+
+# Set working directory
+WORKDIR /workspace/application

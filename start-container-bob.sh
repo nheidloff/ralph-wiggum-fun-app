@@ -1,0 +1,10 @@
+podman run --rm -it \
+  -v $(pwd):/workspace \
+  -e BOBSHELL_API_KEY="$BOBSHELL_API_KEY" \
+  -e GIT_AUTHOR_NAME="$GIT_USER_NAME" \
+  -e GIT_AUTHOR_EMAIL="$GIT_USER_EMAIL" \
+  -e GIT_COMMITTER_NAME="$GIT_USER_NAME" \
+  -e GIT_COMMITTER_EMAIL="$GIT_USER_EMAIL" \
+  -e GIT_USER_NAME="$GIT_USER_NAME" \
+  -e GIT_USER_EMAIL="$GIT_USER_EMAIL" \
+  bob-cli /bin/bash
