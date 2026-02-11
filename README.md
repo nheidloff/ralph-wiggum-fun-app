@@ -55,3 +55,31 @@ $OVERVIEW
 ```
 
 The output of this step are the md files in the [application/ralph/specs](application/ralph/specs) folder.
+
+
+## Step 3 - Implementation Plan
+
+```
+Create an IMPLEMENTATION_PLAN.md file that describes how and in which order to implemented the application which is specified in multiple files in the @specs directory. The IMPLEMENTATION_PLAN should have the following structure:
+
+# Implementation Plan
+
+## Feature: $FEATURE_NAME1
+- [ ] $INSTRUCTION1
+- [ ] $INSTRUCTION2
+- [ ] $INSTRUCTION3
+
+## Feature: $FEATURE_NAME2
+- [ ] $INSTRUCTION4
+
+Break down the tasks in simple steps. Prioritize task in this order. Fail fast on risky work. Save easy wins for later:
+1. Architectural decisions and core abstractions
+2. Integration points between modules
+3. Unknown unknowns and spike work
+4. Standard features and implementation
+5. Polish, cleanup, and quick wins
+
+Do not refer to the Product Requirement Document. The implementation plan needs to be self contained.
+```
+
+The output of this step is [IMPLEMENTATION_PLAN.md](application/ralph/IMPLEMENTATION_PLAN.md).
