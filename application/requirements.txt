@@ -1,0 +1,10 @@
+# Ralph Wiggum Fun App - Requirements
+#
+# This application uses only Python standard library modules.
+# No external dependencies are required.
+#
+# Python version: 3.8 or higher
+#
+# Standard library modules used:
+# - random (for quote selection and response variation)
+# - sys (for exit handling)
