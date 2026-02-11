@@ -121,3 +121,98 @@ sh ../ralph/loop.sh
 ```
 
 The output are the new files in the [application](application) folder.
+
+
+# Step 5 - Run the Application
+
+```
+python application/ralph_app.py 
+
+=================================
+  Ralph Wiggum Fun App!
+=================================
+
+
+What would you like to do?
+
+1. Show me a Ralph quote
+2. Help Ralph with math homework
+3. Exit
+
+Choose an option (1-3): 1
+
+==================================================
+Ralph Wiggum says:
+"I bent my Wookiee."
+==================================================
+
+
+What would you like to do?
+
+1. Show me a Ralph quote
+2. Help Ralph with math homework
+3. Exit
+
+Choose an option (1-3): 2
+
+Ralph needs help with his math homework!
+Give Ralph two numbers to add together.
+First number: 8
+Second number: 8
+
+Ralph is trying to solve: 8.0 + 8.0
+Ralph is thinking really hard...
+
+==================================================
+That's unpossible! I only have 10 fingers!
+==================================================
+```
+
+Output of last iteration:
+
+```
+Successfully completed all remaining tasks from the Implementation Plan:
+
+✅ **Code Quality & Documentation**
+- Verified all Python files are PEP 8 compliant
+- All modules have proper docstrings
+- Consistent naming conventions throughout
+- Proper spacing and indentation
+
+✅ **README & User Documentation**
+- Created comprehensive README.md with:
+  - Project overview and features
+  - Installation instructions
+  - Usage examples for all features
+  - Troubleshooting section
+  - Technical details and credits
+
+✅ **Final Testing & Validation**
+- Created requirements.txt (no external dependencies)
+- All functional requirements met (FR-1.1 through FR-2.6)
+- All technical requirements met (TS-1 through TS-6)
+
+✅ **Updated Project Documentation**
+- IMPLEMENTATION_PLAN.md: All tasks marked as Done
+- PROGRESS.md: Session 3 documented
+
+**Project Status: COMPLETE** 🎉
+
+The Ralph Wiggum Fun Application is fully implemented, tested, documented, and ready for use. All specifications have been met, and the application is production-ready.
+
+Files created/updated in this session:
+- `/workspace/application/README.md` (new)
+- `/workspace/application/requirements.txt` (new)
+- `/workspace/application/ralph/IMPLEMENTATION_PLAN.md` (updated)
+- `/workspace/application/ralph/PROGRESS.md` (updated)
+
+---output---
+{"type":"result","timestamp":"2026-02-11T17:35:13.929Z","status":"success","stats":{"total_tokens":489495,"input_tokens":480854,"output_tokens":8960,"duration_ms":376893,"tool_calls":17}}
+
+[main ef2855e] Ralph Wiggum Iteration 2
+ 4 files changed, 305 insertions(+), 20 deletions(-)
+ create mode 100644 application/README.md
+ create mode 100644 application/requirements.txt
+✅ Success! No unchecked tasks found in /workspace/application/ralph/IMPLEMENTATION_PLAN.md.
+Ralph says: 'I finished helping!
+```
