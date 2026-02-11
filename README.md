@@ -35,3 +35,23 @@ Add another example to help Ralph with his homework. Ralph is not very good at m
 ```
 
 The output of this step is the [PRD](application/ralph/PRD_Ralph_Wiggum_App.md).
+
+
+## Step 2 - Specifications
+
+```
+Create specifications for the features in @application/ralph/PRD_Ralph_Wiggum_App.md. Break down the tasks in separate .md files for different features. Use the following structure.
+
+# Spec: $FEATURE_NAME
+
+## Overview
+$OVERVIEW
+
+## Requirements
+1. **Script Name**: $FILES
+2. **Behavior**: $BEHAVIOUR
+3. **Data**: $DATA
+4. **Execution**: $EXECUTION
+```
+
+The output of this step are the md files in the [application/ralph/specs](application/ralph/specs) folder.
